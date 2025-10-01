@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseane Daher Idiomas</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#000000',
+                        'secondary': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="h-8 flex items-center">
+                <span class="text-xl font-extrabold text-primary">Joseane Daher Idiomas</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about-me" class="text-gray-700 hover:text-primary font-medium transition duration-300">Sobre Mim | About Me</a>
+                <a href="#courses" class="text-gray-700 hover:text-primary font-medium transition duration-300">Cursos | Courses</a>
+                <a href="#methodology" class="text-gray-700 hover:text-primary font-medium transition duration-300">Metodologia | Methodology</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition duration-300">Contato | Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-primary hover:text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#about-me" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150 border-t">Sobre Mim | About Me</a>
+            <a href="#courses" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150">Cursos | Courses</a>
+            <a href="#methodology" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150">Metodologia | Methodology</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150">Contato | Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-primary mb-6">
+                Aprenda Português e Inglês com Experiência Cultural
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+                Aulas personalizadas para estrangeiros, unindo gramática, cultura e fluência prática.
+            </p>
+            <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition duration-300">
+                Entre em Contato
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me" class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-primary mb-6">Sobre Mim | About Me</h2>
+            <p class="text-gray-700 text-lg mb-4">
+                Sou Joseane Daher, especialista em ensino de idiomas e cultura visual, com mais de 30 anos de experiência em fotografia, antropologia visual e storytelling. Minhas aulas unem compreensão cultural e prática linguística.
+            </p>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-primary mb-6">Cursos | Courses</h2>
+            <p class="text-gray-700 text-lg mb-4">
+                Oferecemos cursos de português para estrangeiros e inglês (ESL), incluindo aulas online, materiais personalizados e acompanhamento contínuo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-primary mb-6">Metodologia | Methodology</h2>
+            <p class="text-gray-700 text-lg mb-4">
+                Nosso método integra gramática, conversação e imersão cultural, utilizando experiências visuais e práticas para potencializar a fluência real.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-primary mb-6">Contato | Contact</h2>
+            <p class="text-gray-700 text-lg mb-4">Entre em contato para agendar aulas ou esclarecer dúvidas.</p>
+            <p class="text-gray-700 text-lg"><strong>Email:</strong> contato@joseanedaher.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <div class="space-x-6 mb-4 font-light">
+                <a href="#about-me" class="hover:text-gray-400 transition duration-300">Sobre Mim | About Me</a>
+                <a href="#courses" class="hover:text-gray-400 transition duration-300">Cursos | Courses</a>
+                <a href="#methodology" class="hover:text-gray-400 transition duration-300">Metodologia | Methodology</a>
+                <a href="#contact" class="hover:text-gray-400 transition duration-300">Contato | Contact</a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Joseane Daher Idiomas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+            const menuLinks = menu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => menu.classList.add('hidden'));
+            });
+        });
+    </script>
+
+</body>
+</html>
